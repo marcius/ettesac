@@ -1,0 +1,17 @@
+#header
+{
+	margin: 0;
+	padding: 0;
+	border-top: 3px solid #C9E0ED;
+	background-image: url( 'palermo-cattedrale.jpg' );
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+#logo 
+{
+	color: white;
+	font-size: 300%;
+	padding: 10px 20px;
+}
