@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Contattaci default</h1>
+<h1>Contact Us</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -47,7 +47,7 @@ If you have business inquiries or other questions, please fill out the following
 		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
-	<?php if(extension_loaded('gd')): ?>
+	<?php if(CCaptcha::checkRequirements()): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'verifyCode'); ?>
 		<div>
