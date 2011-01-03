@@ -1,0 +1,32 @@
+.btn {
+	float: left;
+	background: url(images/btn_left.png) no-repeat;
+	padding: 0 0 0 10px;
+	margin: 5px 10px;
+}
+
+.btn a{
+	float: left;
+	height: 40px;
+	background: url(images/btn_stretch.png) repeat-x left top;
+	line-height: 40px;
+	padding: 0 10px;
+	color: #fff;
+	font-size: 1.5em;
+        font-weight: bold;
+	text-decoration: none;
+}
+
+.btn span {
+	background: url(images/btn_right.png) no-repeat;
+	float: left;
+	width: 10px;
+	height: 40px;
+}
+.btn_green { background-color: green; }
+.btn_red { background-color: red; }
+.btn_orange { background-color: orange; }
+.btn_blue { background-color: #002c85; }
+.clear {
+	clear: both;
+}

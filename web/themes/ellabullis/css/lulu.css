@@ -1,0 +1,177 @@
+@import url(/css/blueprint/screen.css);
+@import url(/css/blueprint/plugins/silk-icons/icons.css);
+
+body {
+    font-family: /*gisha,*/ verdana, serif;
+}
+
+/** BOX *******************************************************/
+
+.roundBox.last, .box.last {
+    margin-bottom: 0px !important;
+}
+
+.roundBox {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-image: url(../images/core/bg-box.png);
+    background-position: center top;
+    background-repeat: repeat-x;
+    margin-bottom: 10px !important;
+}
+
+
+.textBox {
+    color: white;
+    /*margin-bottom: 15px;*/
+}
+
+.textBox h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-size: 30px;
+    /*margin-bottom: 15px;*/
+}
+
+.textBox h3 {
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-size: 30px;
+    /*margin-bottom: 15px;*/
+}
+
+#top-bar {
+    display: none;
+}
+
+#top-bar #lingue {
+    margin: 0px 0px 0px 800px;
+    display: none;
+}
+
+/** HEADER *******************************************************/
+
+#header {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#header-logo {
+    margin: 0;
+    display: block;
+    background: url(../images/header_casette_950c.png) center center no-repeat;
+    width: 950px;
+    height: 126px;
+    /*padding: 5px 5px 5px 5px;*/
+}
+
+#header #navbar {
+    margin: 63px 0px 0px 480px;
+}
+
+#header #navbar a{
+    float: left;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 2em;
+    /*font-weight: bold;*/
+    text-decoration: none;
+    color: #002c85;
+    text-shadow: 0px 2px 3px #666;
+}
+
+/** FOOTER *******************************************************/
+
+#footer {
+    margin-top: 10px;
+}
+
+#footer .box {
+    height: 70px;
+    color: white;
+    background: #002C85; /*#00008b;*/
+    font-size: 12px;
+}
+
+/* Backstop.co.uk footer */
+#footer .contact a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer .contact a.tel {
+    background-position: 0% 0%;
+}
+
+#footer .contact a.twit {
+    background-position: 0% 50%;
+}
+
+#footer .contact a.email {
+    background-position: 0% 120%;
+}
+
+#footer .contact > a {
+    background: transparent url(../images/contact-sprite.png) no-repeat 0% 0%;
+    display: block;
+    font-size: 12 px;
+    margin: 11px 0px;
+    padding-left: 40px;
+}
+
+#footer .networks {
+}
+
+#footer .networks a {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 61px;
+}
+
+#footer .networks .facebook a {
+    background-image: url(../images/facebook_square.png);
+}
+
+#footer .networks .linkedin a {
+    background-image: url(../images/linkedin_square.png);
+}
+
+#footer .networks .twitter a {
+    background-image: url(../images/twitter_square.png);
+}
+
+/** PAGINE *******************************************************/
+
+/* home page */
+#costruzione {
+    height: 50px;
+}
+
+#casette {
+    height: 320px;
+    color: white;
+    background: #cd0000;
+    font-size: 14px;
+}
+
+/* tariffe */
+#tariffe, #tariffe-note{
+    height: 260px;
+    font-size: 12px;
+}
+
+#tariffe {
+   /* background: #cd0000;*/
+    color: black;
+}
+
+#tariffe-note {
+    color: white;
+    background: #458b00;
+}

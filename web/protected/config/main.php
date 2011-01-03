@@ -7,17 +7,19 @@
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'Le casette di Lulu',
-    'theme' => 'lulu1',
+    'theme' => 'ellabullis',
     'language' => 'it',
     'sourceLanguage' => 'en',
+    'preload' => array('log'),
     //'preload' => array('log', 'ELangHandler'),
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.extensions.yiidebugtb.*',
     ),
     'modules' => array(
-// uncomment the following to enable the Gii tool
+    // uncomment the following to enable the Gii tool
     /*
       'gii'=>array(
       'class'=>'system.gii.GiiModule',
@@ -31,6 +33,7 @@ return array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,
         ),
+        /*
           'urlManager' => array(
           'class' => 'application.extensions.langhandler.ELangCUrlManager',
           'urlFormat' => 'path',
@@ -41,8 +44,9 @@ return array(
           //'<lang:a-z{2}_a-z{2,}>/<_m>/<_c>/<_a>' => '<_m>/<_c>/<_a>'
           ),
           ),
+         */
         // uncomment the following to enable URLs in path-format
-/*
+
         'urlManager' => array(
             'urlFormat' => 'path',
             'showScriptName' => false,
@@ -52,7 +56,6 @@ return array(
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
         ),
-*/		
         'db' => array(
             'connectionString' => 'sqlite:' . dirname(__FILE__) . '/../data/testdrive.db',
         ),
@@ -75,7 +78,13 @@ return array(
             'routes' => array(
                 array(
                     'class' => 'CFileLogRoute',
-                    'levels' => 'error, warning',
+                /* 'filter' => 'CLogFilter', */
+                /* 'levels' => 'error, warning', */
+                ),
+                array(
+                    'class' => 'XWebDebugRouter',
+                    'config' => 'alignLeft, opaque, runInDebug, fixedPos',
+                    'levels' => 'error, warning, trace, profile, info'
                 ),
             // uncomment the following to show log messages on web pages
             /*
