@@ -1,5 +1,10 @@
 <?php
 
+// specify how many levels of call stack should be shown in each log message
+defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
+// remove the following lines when in production mode
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 // This is the main Web application configuration. Any writable
@@ -16,8 +21,16 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.extensions.yiidebugtb.*',
     ),
     'modules' => array(
+    // uncomment the following to enable the Gii tool
+    /*
+      'gii'=>array(
+      'class'=>'system.gii.GiiModule',
+      'password'=>'Enter Your Password Here',
+      ),
+     */
     ),
     // application components
     'components' => array(
@@ -73,6 +86,17 @@ return array(
                 /* 'filter' => 'CLogFilter', */
                 /* 'levels' => 'error, warning', */
                 ),
+                array(
+                    'class' => 'XWebDebugRouter',
+                    'config' => 'alignLeft, opaque, runInDebug, fixedPos',
+                    'levels' => 'error, warning, trace, profile, info'
+                ),
+            // uncomment the following to show log messages on web pages
+            /*
+              array(
+              'class'=>'CWebLogRoute',
+              ),
+             */
             ),
         ),
         'ELangHandler' => array(

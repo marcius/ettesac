@@ -19,16 +19,16 @@
                 <div id="header-logo" class="span-24">
                     <div id="lingue">
                         <div class="prepend-20 span-4 last">
-                            <a href="pages/story.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/unitedkingdom.png"/></a>
-                            <a href="pages/story.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/italy.png"/></a>
-                            <a href="pages/story.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/france.png"/></a>
-                            <a href="pages/story.html"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/germany.png"/></a>
+                            <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/unitedkingdom.png"/></a>
+                            <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/italy.png"/></a>
+                            <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/france.png"/></a>
+                            <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/flag/germany.png"/></a>
                         </div>
                     </div>
                     <div id="navbar">
                         <div><a href="/">Home</a><span></span></div>
-                        <div><a href="/site/fares">Tariffe</a><span></span></div>
-                        <div><a href="/site/contact">Contatti</a><span></span></div>
+                        <div><a href="/site/rates">Tariffe</a><span></span></div>
+                        <div><a href="/site/rates">Contatti</a><span></span></div>
                         <div><a href="/site/book">Prenota</a><span></span></div>
                         <div class="clear"></div>
                     </div>
