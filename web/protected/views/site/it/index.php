@@ -14,7 +14,7 @@ $cs->registerLinkTag('stylesheet', 'text/css', 'js/nivo-slider/nivo2.css', 'scre
 </div>
 <div class="span-16 last">
     <div id="slider2" class="nivoSlider">
-        <a href="#link1"><img width="630" src="images/a_cucina.png" alt="" /></a>
+        <a href="#link1"><img width="630" src="/images/a_cucina.png" alt="" /></a>
         <a href="#link2"><img width="630" src="images/a_divano.png" alt="" /></a>
         <a href="#link3"><img width="630" src="images/a_letto.png" alt="" /></a>
         <a href="#link4"><img width="630" src="images/b_cucina.png" alt="" /></a>
