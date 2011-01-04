@@ -27,7 +27,7 @@
                     </div>
                     <div id="navbar">
                         <div><a href="/">Home</a><span></span></div>
-                        <div><a href="#">Tariffe</a><span></span></div>
+                        <div><a href="/site/rates">Tariffe</a><span></span></div>
                         <div><a href="#">Contatti</a><span></span></div>
                         <div><a href="#">Prenota</a><span></span></div>
                         <div class="clear"></div>
