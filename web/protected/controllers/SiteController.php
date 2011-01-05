@@ -59,14 +59,13 @@ class SiteController extends Controller {
      * Displays the contact page
      */
     public function actionContact() {
-		xlog(array('array-to-check' => array('value1', 'value2')));
         $model = new ContactForm;
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
             if ($model->validate()) {
                 $headers = "From: {$model->email}\r\nReply-To: {$model->email}";
                 mail(Yii::app()->params['adminEmail'], $model->subject, $model->body, $headers);
-                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::app()->user->setFlash('contact', 'Grazie per averci contattato. Risponderemo al più presto.');
                 $this->refresh();
             }
         }

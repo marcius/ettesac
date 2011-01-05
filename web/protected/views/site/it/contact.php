@@ -1,11 +1,8 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - Contattaci it';
-$this->breadcrumbs=array(
-	'Contact',
-);
+$this->pageTitle=Yii::app()->name . ' - Contattaci';
 ?>
 
-<h1>Contattaci it</h1>
+<h1>Contattaci</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -16,14 +13,14 @@ $this->breadcrumbs=array(
 <?php else: ?>
 
 <p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+Se vuoi effettuare una richiesta di informazioni puoi usare il seguente modulo.
 </p>
 
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm'); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">I campi con <span class="required">*</span> sono obbligatori.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -54,13 +51,12 @@ If you have business inquiries or other questions, please fill out the following
 		<?php $this->widget('CCaptcha'); ?>
 		<?php echo $form->textField($model,'verifyCode'); ?>
 		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
+		<div class="hint">Inserisci le lettere presenti nell'immagine qui sopra.</div>
 	</div>
 	<?php endif; ?>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
+		<?php echo CHtml::submitButton('Invia'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
