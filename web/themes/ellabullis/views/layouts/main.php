@@ -27,9 +27,9 @@
                     </div>
                     <div id="navbar">
                         <div><a href="/">Home</a><span></span></div>
-                        <div><a href="/site/rates">Tariffe</a><span></span></div>
-                        <div><a href="#">Contatti</a><span></span></div>
-                        <div><a href="#">Prenota</a><span></span></div>
+                        <div><a href="<?php echo Yii::app()->createUrl("site/rates"); ?>">Tariffe</a><span></span></div>
+                        <div><a href="<?php echo Yii::app()->createUrl("site/contact"); ?>">Contatti</a><span></span></div>
+                        <div><a href="<?php echo Yii::app()->createUrl("site/book"); ?>">Prenota</a><span></span></div>
                         <div class="clear"></div>
                     </div>
                 </div>
