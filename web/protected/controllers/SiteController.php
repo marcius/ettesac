@@ -59,6 +59,7 @@ class SiteController extends Controller {
      * Displays the contact page
      */
     public function actionContact() {
+		xlog(array('array-to-check' => array('value1', 'value2')));
         $model = new ContactForm;
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];

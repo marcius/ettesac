@@ -3,7 +3,7 @@
 // specify how many levels of call stack should be shown in each log message
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
 // remove the following lines when in production mode
-defined('YII_DEBUG') or define('YII_DEBUG',true);
+defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -11,7 +11,7 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'Le casette di Lulu',
+    'name' => 'Le casette di Lulu - dev',
     'theme' => 'ellabullis',
     'language' => 'it',
     'sourceLanguage' => 'en',
@@ -72,6 +72,10 @@ return array(
           'username' => 'root',
           'password' => '',
           'charset' => 'utf8',
+		  // only in debug
+  		  'enableProfiling' => true,
+		  'enableParamLogging' => true,
+
           ),
          */
         'errorHandler' => array(
@@ -91,12 +95,10 @@ return array(
                     'config' => 'alignLeft, opaque, runInDebug, fixedPos',
                     'levels' => 'error, warning, trace, profile, info'
                 ),
-            // uncomment the following to show log messages on web pages
-            /*
-              array(
-              'class'=>'CWebLogRoute',
-              ),
-             */
+				array(
+					'class' => 'CWebLogRoute',
+					'showInFireBug' => true,
+				),
             ),
         ),
         'ELangHandler' => array(
