@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !web/
+RewriteRule (.*) /web/$1 [L]
+#RewriteBase /
+ # RewriteRule ^(.*)$ /web/$1 [L,QSA]
+
+</IfModule>
