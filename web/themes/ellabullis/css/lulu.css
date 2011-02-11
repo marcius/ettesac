@@ -7,7 +7,7 @@ body {
 /** BOX *******************************************************/
 
 .roundBox.last, .box.last {
-    margin-bottom: 0px !important;
+   /* margin-bottom: 0px !important;*/
 }
 
 .roundBox {
@@ -17,9 +17,8 @@ body {
     background-image: url(../images/core/bg-box.png);
     background-position: center top;
     background-repeat: repeat-x;
-    margin-bottom: 10px !important;
+    /*margin-bottom: 10px !important;*/
 }
-
 
 .textBox {
     color: white;
@@ -68,7 +67,7 @@ body {
 }
 
 #header #navbar {
-    margin: 63px 0px 0px 480px;
+    margin: 63px 0px 0px 560px;
 }
 
 #header #navbar a{
@@ -76,11 +75,9 @@ body {
     line-height: 40px;
     padding: 0 10px;
     color: #fff;
-    font-size: 2em;
-    /*font-weight: bold;*/
+    font-size: 1.3em;
     text-decoration: none;
-    color: #002c85;
-    text-shadow: 0px 2px 3px #666;
+    color: #3B1E1A;
 }
 
 /** FOOTER *******************************************************/
@@ -154,15 +151,16 @@ body {
 
 #casette {
     height: 320px;
-    color: white;
-    background: #cd0000;
-    font-size: 14px;
+    color: black;
+    background: white;
+    border: solid 4px #B00A0D;
+    font-size: 1em;
 }
 
 /* tariffe */
 #tariffe, #tariffe-note{
     height: 260px;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 #tariffe {
@@ -174,6 +172,11 @@ body {
     color: white;
     background: #458b00;
 }
+
+#tariffe tbody tr:nth-child(even) td, tbody tr.even td {
+    background: transparent
+}
+
 
 /********** FORMS ****************/
 

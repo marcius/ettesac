@@ -9,6 +9,7 @@ $cs->registerLinkTag('stylesheet', 'text/css', 'js/nivo-slider/nivo2.css', 'scre
     <div id="casette" class="box roundBox last">
         Le casette di Lulù sono tre accoglienti bilocali indipendenti, ideati per offrirvi massimo comfort e tranquillità durante il vostro soggiorno.
         <br/><br/>Sono moderne e funzionali, ed al tempo stesso sono arredate con gusto ed attenzione, ciascuna con un proprio stile.
+        <br/><br/>La struttura è ubicata in una zona centralissima della città, a pochi minuti dal centro storico e dalla zona commerciale.
         <br/><br/>Gestiamo le casette con cortesia e professionalità, mantenendo l'impronta della nostra cultura mediterranea: accoglienza, calore e disponibilità.
     </div>
 </div>

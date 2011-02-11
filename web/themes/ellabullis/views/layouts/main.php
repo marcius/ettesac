@@ -29,7 +29,9 @@
                         <div><a href="/">Home</a><span></span></div>
                         <div><a href="<?php echo Yii::app()->createUrl("site/rates"); ?>">Tariffe</a><span></span></div>
                         <div><a href="<?php echo Yii::app()->createUrl("site/contact"); ?>">Contatti</a><span></span></div>
+                        <!--
                         <div><a href="<?php echo Yii::app()->createUrl("site/book"); ?>">Prenota</a><span></span></div>
+                        -->
                         <div class="clear"></div>
                     </div>
                 </div>
