@@ -158,25 +158,30 @@ body {
 }
 
 /* tariffe */
+#tariffe tbody tr:nth-child(even) td, tbody tr.even td {
+    background: transparent
+}
+
 #tariffe, #tariffe-note{
     height: 260px;
     font-size: 1em;
 }
 
 #tariffe {
-   /* background: #cd0000;*/
-    color: black;
+    border: solid 4px #458b00;
+    background: white;
 }
 
 #tariffe-note {
-    color: white;
-    background: #458b00;
+    border: solid 4px #F4EA40;
+    background: white;
 }
-
-#tariffe tbody tr:nth-child(even) td, tbody tr.even td {
-    background: transparent
+	
+#contactus {
+    border: solid 4px #050E54;
+    background: white;
+    font-size: 1em;
 }
-
 
 /********** FORMS ****************/
 
@@ -200,4 +205,19 @@ display: block;
 
 div.form input, div.form textarea, div.form select {
 margin: 0.2em 0 0.5em 0;
+}
+
+/********** COLORS ****************/
+
+.verde {
+	border: solid 4px #6C803A;
+}	
+.giallo {
+	border: solid 4px #F4EA40;
+}
+.rosso {
+	border: solid 4px #B00A0D;
+}
+.blu {
+	border: solid 4px #050E54;
 }

@@ -2,7 +2,8 @@
 $this->pageTitle=Yii::app()->name . ' - Contattaci';
 ?>
 
-<h1>Contattaci</h1>
+<div class="span-24 last">
+    <div id="contactus" class="box roundBox">
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -64,3 +65,6 @@ Se vuoi effettuare una richiesta di informazioni puoi usare il seguente modulo.
 </div><!-- form -->
 
 <?php endif; ?>
+
+    </div>
+</div>

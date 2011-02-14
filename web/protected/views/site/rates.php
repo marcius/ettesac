@@ -1,6 +1,6 @@
 ﻿<?php $this->pageTitle = Yii::app()->name; ?>
 <div class="span-15">
-    <div id="tariffe"><!-- class="box roundBox last"-->
+    <div id="tariffe" class="box roundBox">
         <table>
             <tr><th>Tariffe</th><th>Bassa stagione</th><th>Alta stagione</th></tr>
             <tr><td>Una notte - 1 o 2 persone</td><td>€ 80,00</td><td>€ 100,00</td></tr>
@@ -13,7 +13,7 @@
     </div>
 </div>
 <div class="span-9 last">
-    <div id="tariffe-note" class="box roundBox last">
+    <div id="tariffe-note" class="box roundBox">
         <p>Servizi a richiesta:</p>
         <ul>
             <li>colazione,</li>
